@@ -27,7 +27,9 @@ class Drawermob extends StatelessWidget {
               ),
               leading: Icon(nav_Icons[i]),
               title:Text(nav_items[i]),
-              onTap: (){},
+              onTap: (){
+             
+              },
 
             )
         ],

@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/widgets/contactSec.dart';
+import 'package:portfolio/widgets/mainMob.dart';
+import 'package:portfolio/widgets/projectSection.dart';
+import 'package:portfolio/widgets/skillsMob.dart';
 
 List<String> nav_items=[
   'Home',
@@ -13,4 +17,10 @@ List<IconData> nav_Icons=[
   Icons.apps,
   Icons.quick_contacts_mail
 
+];
+List  nav_screens=[
+  Mainmob(),
+  Skillsmob(),
+  Projectsection(),
+  Contactsec()
 ];
