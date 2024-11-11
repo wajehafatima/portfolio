@@ -18,9 +18,5 @@ List<IconData> nav_Icons=[
   Icons.quick_contacts_mail
 
 ];
-List  nav_screens=[
-  Mainmob(),
-  Skillsmob(),
-  Projectsection(),
-  Contactsec()
-];
+
+

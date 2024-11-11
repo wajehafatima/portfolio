@@ -19,12 +19,16 @@ class Maindesktop extends StatelessWidget {
               SizedBox(height: 15,),
               SizedBox(width: 300,
                 child: ElevatedButton(
+
+
+
+
                     onPressed: (){},
 
                     child: Text('Get in Touch',
                       style: TextStyle(color: AppColors.whitep),)),
-              )
-            ],
+              ),
+     ],
           ),
           Image.asset('lib/assets/pp.jpeg',
             width:150,

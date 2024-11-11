@@ -10,7 +10,7 @@ class Footer extends StatelessWidget {
       width: double.maxFinite,
       color: AppColors.bg,
       alignment: Alignment.center,
-      child: Text('Developed by Wajeha Fatima with Flutter',
+      child: Text('Developed by Wajeha Fatima using Flutter',
         style: TextStyle(
           fontWeight: FontWeight.w400,
           color: AppColors.whitesec,

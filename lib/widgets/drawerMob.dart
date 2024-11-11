@@ -29,11 +29,7 @@ class Drawermob extends StatelessWidget {
               leading: Icon(nav_Icons[i]),
               title:Text(nav_items[i]),
               onTap: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) =>(),
 
-                  ));
              
               },
 
