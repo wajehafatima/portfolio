@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/widgets/mainDesktop.dart';
 
 import '../constants/colors.dart';
 import '../constants/nav_items.dart';
@@ -28,6 +29,11 @@ class Drawermob extends StatelessWidget {
               leading: Icon(nav_Icons[i]),
               title:Text(nav_items[i]),
               onTap: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) =>(),
+
+                  ));
              
               },
 
