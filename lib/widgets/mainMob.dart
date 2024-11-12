@@ -13,14 +13,18 @@ class Mainmob extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Center(
-            child: Image.asset('lib/assets/pp.jpeg',
-              width: 120,
-              height: 120,),
+            child: CircleAvatar(radius: 80,
+             backgroundImage: AssetImage('lib/assets/pp.jpeg'),
+                ),
+
           ),
           SizedBox(height: 30,),
 
-          Text('Hi,\nI am Wajeha Fatima,\nA Flutter Developer',style: TextStyle(fontSize: 22,height: 1.5,fontWeight: FontWeight.bold,
+          Text('Hi,\nI am Wajeha Fatima,',style: TextStyle(fontSize: 22,height: 1.5,fontWeight: FontWeight.bold,
               color: AppColors.whitep),),
+
+          Text('A Flutter Developer',style: TextStyle(fontSize: 18,height: 1.5,fontWeight: FontWeight.bold,
+              color: AppColors.yellowp),),
           SizedBox(height: 15,),
           SizedBox(width: 190,
             child: ElevatedButton(

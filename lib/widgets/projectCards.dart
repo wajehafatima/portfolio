@@ -15,8 +15,11 @@ class Projectcards extends StatelessWidget {
       ),
       child: Column(crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
-        children: [Image.asset(project.image,width: 250,
-          height: 140,fit: BoxFit.cover,),
+        children: [Padding(
+          padding: const EdgeInsets.only(top: 20),
+          child: Image.asset(project.image,width: 250,
+            height: 140,fit: BoxFit.contain,),
+        ),
 
 
           Padding(

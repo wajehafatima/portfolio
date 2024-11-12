@@ -14,8 +14,13 @@ class Maindesktop extends StatelessWidget {
         children: [
           Column(mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('Hi,\nI am Wajeha Fatima,\nA Flutter Developer',style: TextStyle(fontSize: 30,height: 1.5,fontWeight: FontWeight.bold,
+              Text('Hi,\nI am Wajeha Fatima,',style: TextStyle(fontSize: 30,height: 1.5,fontWeight: FontWeight.bold,
                   color: AppColors.whitep),),
+
+
+              Text('A Flutter Developer',style: TextStyle(fontSize: 24,height: 1.5,fontWeight: FontWeight.bold,
+                  color: AppColors.yellowp),),
+
               SizedBox(height: 15,),
               SizedBox(width: 300,
                 child: ElevatedButton(
@@ -30,9 +35,9 @@ class Maindesktop extends StatelessWidget {
               ),
      ],
           ),
-          Image.asset('lib/assets/pp.jpeg',
-            width:150,
-            height: 150,)
+          CircleAvatar(radius: 120,
+            backgroundImage: AssetImage('lib/assets/pp.jpeg'),
+          )
         ],
       ) ,);
   }

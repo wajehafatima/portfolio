@@ -27,6 +27,8 @@ class Homepage extends StatefulWidget {
 
 class _HomepageState extends State<Homepage> {
   final scaffoldKey= GlobalKey<ScaffoldState>();
+  final scrollcontroller = ScrollController();
+  final List<GlobalKey> navBarKeys=List.generate(4,(index)=>GlobalKey());
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
@@ -34,47 +36,78 @@ class _HomepageState extends State<Homepage> {
         return Scaffold(key: scaffoldKey,
             backgroundColor: AppColors.bg,
 
-          endDrawer: constraints.maxWidth>=kMinDeskTopWidth?null: Drawermob(),
-          body:ListView(scrollDirection: Axis.vertical,
-            children: [ //main
-              if(constraints.maxWidth>=kMinDeskTopWidth)
-           Headerdesk() else
-             Headermob(onMenuTap: (){
-               scaffoldKey.currentState?.openEndDrawer();
-             },),
-              if(constraints.maxWidth>=kMinDeskTopWidth)
-        Maindesktop() else
+          endDrawer: constraints.maxWidth>=kMinDeskTopWidth?null: Drawermob(onNavItemTap: (int navIndex) {
+            scaffoldKey.currentState?.closeEndDrawer();
+            scrollToSection(navIndex);
+          },),
+          body:SingleChildScrollView(
+            controller: scrollcontroller,
+            scrollDirection: Axis.vertical,
+            child: Column(
+              children: [ //main
+                SizedBox(key: navBarKeys.first,),
+                if(constraints.maxWidth>=kMinDeskTopWidth)
+             Headerdesk(onNavMenuTap: (int navIndex) {
+               scrollToSection(navIndex);
 
-          Mainmob() ,
-              if(constraints.maxWidth>=kMinDeskTopWidth)
-          //skills.........
-         Skillsdesk() else
+             },) else
+               Headermob(onMenuTap: (){
+                 scaffoldKey.currentState?.openEndDrawer();
+               },),
+                if(constraints.maxWidth>=kMinDeskTopWidth)
+                    Maindesktop() else
 
-              Skillsmob(),
-
-
-           //project sections
-
-SizedBox(height: 20,),
-
-
-
-              Projectsection(),
-SizedBox(height: 20,),
-              //Contacts
-
-             Contactsec(),
-
-              //footer Section
-
-SizedBox(height: 30,),
-
-              Footer(),
+            Mainmob() ,
+                if(constraints.maxWidth>=kMinDeskTopWidth)
 
 
-          ],)
+
+            //skills.........
+
+                     Skillsdesk(
+                       key: navBarKeys[1],
+                     ) else
+
+                Skillsmob(
+                  key: navBarKeys[1],
+                ),
+
+
+             //project sections
+
+            SizedBox(height: 20,),
+
+
+
+                Projectsection(
+                  key: navBarKeys[2],
+                ),
+            SizedBox(height: 20,),
+                //Contacts
+
+               Contactsec(
+                 key: navBarKeys[3],
+               ),
+
+                //footer Section
+
+            SizedBox(height: 30,),
+
+                Footer(),
+
+
+            ],),
+          )
         );
       }
     );
   }
+  void scrollToSection(int navIndex){
+    if(navIndex==4){
+      return;
+    }
+    final key= navBarKeys[navIndex];
+    Scrollable.ensureVisible(key.currentContext!,duration:Duration(microseconds: 500),curve: Curves.easeInOut);
+  }
+
 }

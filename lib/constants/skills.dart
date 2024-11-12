@@ -1,7 +1,7 @@
 const List<Map> skillItems = [
   {'img': 'lib/assets/fltr.png',
   'title':'Flutter'},
-  {'img':'lib/assets/dt.png'
+  {'img':'lib/assets/newd.png'
     ,
     'title':'Dart'},
   {'img':'lib/assets/fb.logo.png',
@@ -9,7 +9,7 @@ const List<Map> skillItems = [
   'title':'FireBase'},
   {'img':'lib/assets/getxxx.png',
   'title':'GetX'},
-  {'img':'lib/assets/oops.png',
+  {'img':'lib/assets/op.png',
   'title':'OOP'},
 
 ];

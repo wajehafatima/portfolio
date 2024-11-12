@@ -22,14 +22,14 @@ class Projectsection extends StatelessWidget {
             Wrap(spacing: 25,
               runSpacing: 25,
               children: [
-                Projectcards(project: projectutils(image: 'lib/assets/Files.jpg',title: 'FaceBook Clone', subtitle:'Facebook Clone made with Flutter for mobile App development Skills.\nexploring features and functionality.' ),),
-                Projectcards(project:projectutils(image: 'lib/assets/pro.jpg', title: 'Calculator', subtitle:'A simple Calculator App built with flutter\n perfotms basic arithmetic operations with ease.'), ),
-                Projectcards(project: projectutils(image: 'lib/assets/counter.png', title: 'Counter App', subtitle: 'A project for learning\nIncrement, decrement and reset with ease function.'), ),
-                Projectcards(project:projectutils(image: 'lib/assets/pro.jpg', title: 'Gold App', subtitle:'An app which calculate gold price with different units accurately'), ),
-                Projectcards(project:projectutils(image: 'lib/assets/pro.jpg', title: 'Currency Converter', subtitle: 'For instant and accurate conversion of currencies globally'), ),
+                Projectcards(project: projectutils(image: 'lib/assets/fb22.jpeg',title: 'FaceBook Clone', subtitle:'Facebook Clone made with Flutter for mobile App development Skills.\nexploring features and functionality.' ),),
+                Projectcards(project:projectutils(image: 'lib/assets/calcu.jpeg', title: 'Calculator', subtitle:'A simple Calculator App built with flutter\n perfotms basic arithmetic operations with ease.'), ),
+                Projectcards(project: projectutils(image: 'lib/assets/counte12.jpeg', title: 'Counter App', subtitle: 'A project for learning\nIncrement, decrement and reset with ease function.'), ),
+                Projectcards(project:projectutils(image: 'lib/assets/gold.jpeg', title: 'Gold App', subtitle:'An app which calculate gold price with different units accurately'), ),
+                Projectcards(project:projectutils(image: 'lib/assets/pr.jpeg', title: 'Project Report ', subtitle:'A detailed report of development process submitted to our organization'), ),
 
-                Projectcards(project:projectutils(image: 'lib/assets/pro.jpg', title: 'ToDo App', subtitle:'A simple but efficient Project to create, manage, and conquer your to-do list'), ) ,
-                Projectcards(project:projectutils(image: 'lib/assets/pro.jpg', title: 'Weather App', subtitle: ' An application created for Real-time updates and weather alerts'), ),
+                Projectcards(project:projectutils(image: 'lib/assets/todo12.jpeg', title: 'ToDo App', subtitle:'A simple but efficient Project to create, manage, and conquer your to-do list'), ) ,
+                Projectcards(project:projectutils(image: 'lib/assets/cdt.jpeg', title: 'CountDown Timer', subtitle: 'Customized countdown timer built to display real-time remaining time'), ),
 
 
               ],

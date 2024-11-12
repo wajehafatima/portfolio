@@ -9,6 +9,6 @@ final VoidCallback? onTap;
     return GestureDetector(onTap: onTap, child: Text('WF',style: TextStyle(fontSize: 22,
         fontWeight: FontWeight.bold,decoration:
         TextDecoration.underline,
-        color: AppColors.yellowsec),));
+        color: AppColors.whitesec),));
   }
 }

@@ -8,6 +8,7 @@ class Skillsdesk extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+
       width: MediaQuery.of(context).size.width,
       padding: EdgeInsets.fromLTRB(25, 20, 25,60),
       color: Colors.black12,

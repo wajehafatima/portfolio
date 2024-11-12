@@ -5,8 +5,9 @@ import '../constants/colors.dart';
 import '../constants/nav_items.dart';
 import '../styles/style.dart';
 class Headerdesk extends StatelessWidget {
-  const Headerdesk({super.key});
-
+  const Headerdesk({super.key,
+  required this.onNavMenuTap});
+final Function(int) onNavMenuTap;
   @override
   Widget build(BuildContext context) {
     return Container(height: 60,
@@ -19,7 +20,9 @@ class Headerdesk extends StatelessWidget {
         for(int i=0; i<nav_items.length; i++)
           Padding(
             padding: const EdgeInsets.only(right:20),
-            child: TextButton(onPressed: (){}, child:Text(nav_items[i],
+            child: TextButton(onPressed: (){
+              onNavMenuTap(i);
+            }, child:Text(nav_items[i],
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500,color: AppColors.whitep),)),
           )
       ],),);

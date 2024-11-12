@@ -15,7 +15,7 @@ class Skillsmob extends StatelessWidget {
         for(int i=0;i<skillItems.length; i++)
 
           Container(margin: EdgeInsets.only(bottom: 5),
-            width: double.maxFinite,
+            width: MediaQuery.of(context).size.width*0.9,
             decoration:BoxDecoration(
               color: Colors.black12,
               borderRadius: BorderRadius.circular(5),

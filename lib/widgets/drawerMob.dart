@@ -4,8 +4,9 @@ import 'package:portfolio/widgets/mainDesktop.dart';
 import '../constants/colors.dart';
 import '../constants/nav_items.dart';
 class Drawermob extends StatelessWidget {
-  const Drawermob({super.key});
-
+  const Drawermob({super.key,
+  required this.onNavItemTap,});
+final Function(int) onNavItemTap;
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -29,7 +30,7 @@ class Drawermob extends StatelessWidget {
               leading: Icon(nav_Icons[i]),
               title:Text(nav_items[i]),
               onTap: (){
-
+onNavItemTap(i);
              
               },
 
