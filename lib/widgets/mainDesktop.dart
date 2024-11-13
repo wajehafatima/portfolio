@@ -1,8 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../constants/colors.dart';
-class Maindesktop extends StatelessWidget {
+class Maindesktop extends StatefulWidget {
   const Maindesktop({super.key});
+
+
+
+
+  @override
+  State<Maindesktop> createState() => _MaindesktopState();
+}
+
+class _MaindesktopState extends State<Maindesktop> {
+
+
+  Future<void> _launchUrl(String url) async {
+    await launch(url);
+
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +45,9 @@ class Maindesktop extends StatelessWidget {
 
 
 
-                    onPressed: (){},
+                    onPressed: (){
+                      _launchUrl('https://wa.me/923349297879');
+                    },
 
                     child: Text('Get in Touch',
                       style: TextStyle(color: AppColors.whitep),)),
@@ -42,3 +61,10 @@ class Maindesktop extends StatelessWidget {
       ) ,);
   }
 }
+
+
+
+
+
+
+

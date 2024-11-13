@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../constants/colors.dart';
 class Mainmob extends StatelessWidget {
   const Mainmob({super.key});
+
+  Future<void> _launchUrl(String url) async {
+    await launch(url);
+
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +34,9 @@ class Mainmob extends StatelessWidget {
           SizedBox(height: 15,),
           SizedBox(width: 190,
             child: ElevatedButton(
-                onPressed: (){},
+                onPressed: (){
+                  _launchUrl('https://wa.me/923349297879');
+                },
                 child: Text('Get in Touch',
                   style: TextStyle(color: AppColors.whitep),)),
           ),
