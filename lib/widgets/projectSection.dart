@@ -22,7 +22,7 @@ class Projectsection extends StatelessWidget {
             Wrap(spacing: 25,
               runSpacing: 25,
               children: [
-                Projectcards(project: projectutils(image: 'lib/assets/fb22.jpeg',title: 'FaceBook Clone', subtitle:'Facebook Clone made with Flutter for mobile App development Skills.\nexploring features and functionality.' ),),
+                Projectcards(project: projectutils(image: 'lib/assets/fb22.jpeg',title: 'Facebook Clone', subtitle:'Facebook Clone made with Flutter for mobile App development Skills.\nexploring features and functionality.' ),),
                 Projectcards(project:projectutils(image: 'lib/assets/calcu.jpeg', title: 'Calculator', subtitle:'A simple Calculator App built with flutter\n perfotms basic arithmetic operations with ease.'), ),
                 Projectcards(project: projectutils(image: 'lib/assets/counte12.jpeg', title: 'Counter App', subtitle: 'A project for learning\nIncrement, decrement and reset with ease function.'), ),
                 Projectcards(project:projectutils(image: 'lib/assets/gold.jpeg', title: 'Gold App', subtitle:'An app which calculate gold price with different units accurately'), ),

@@ -11,7 +11,7 @@ class projectutils{
   
 }
 List<projectutils> projectsUtils=[
-  projectutils(image: 'lib/assets/fb22.jpeg', title:'FaceBook Clone', subtitle:'Facebook Clone made with Flutter for mobile App development Skills.\nexploring features and functionality.'),
+  projectutils(image: 'lib/assets/fb22.jpeg', title:'Facebook Clone', subtitle:'Facebook Clone made with Flutter for mobile App development Skills.\nexploring features and functionality.'),
   projectutils(image: 'lib/assets/calcu.jpeg', title: 'Calculator', subtitle:'A simple Calculator App built with flutter\n perfotms basic arithmetic operations with ease.'),
   projectutils(image: 'lib/assets/counte12.jpeg', title: 'Counter App', subtitle: 'A project for learning\nIncrement, decrement and reset with ease function.'),
   projectutils(image: 'lib/assets/gold.jpeg', title: 'Gold App', subtitle:'An app which calculate gold price with different units accurately'),
